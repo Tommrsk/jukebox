@@ -1,0 +1,124 @@
+body {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+}
+
+
+ul {
+    list-style: none;
+}
+
+img {
+    border-radius: 50%;
+    width: 150px; /* Taille réduite des couvertures */
+    height: 150px; /* Taille réduite des couvertures */
+    transition: transform 0.3s ease; /* Animation de transition */
+}
+
+img:hover {
+    transform: scale(1.1); /* Échelle agrandie lors du survol */
+}
+
+#randomButton {
+    position:absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+}
+
+#playlist {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin-bottom: 2%; /* Ajoute une marge en bas */
+    z-index: 9999; /* Assurez-vous que la liste reste au-dessus du contenu si nécessaire */
+    width: 10%; /* Ajustez la largeur selon vos préférences */
+    height: 20%; /* Ajustez la hauteur selon vos préférences */
+
+}
+
+
+h2,
+small {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto; /* Centrer l'image */
+}
+
+small {
+    display: block;
+    text-align: center;
+}
+
+#lecteur {
+   position:relative;
+   left: 50%;
+   transform: translateX(-50%);
+   top: 150px;
+    z-index: 9999;
+}
+
+@media only screen and (max-width: 768px) {
+    img {
+        width: 100px; /* Taille réduite des couvertures pour les appareils plus petits */
+        height: 100px; /* Taille réduite des couvertures pour les appareils plus petits */
+    }
+
+    #playlist {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Styles pour le message "À l'écoute" */
+#listeningStatus {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    z-index: 9999;
+    color: white; /* Texte en blanc pour contraster avec le fond sombre */
+}
+
+#lectureCover {
+    position: absolute;
+    top: 80px; /* Abaissez la couverture */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9998;
+}
+#currentCover {
+    max-width: 100%; /* La couverture conserve sa taille tout en restant dans son conteneur */
+    height: auto; /* Ajustement automatique de la hauteur pour conserver les proportions */
+    border-radius: 50%; /* Pour rendre la couverture ronde */
+}
+
+#coverAndTitleContainer {
+    position: relative;
+}
+
+#currentTitle {
+    text-align: center;
+    color: white; /* Couleur du texte */
+    margin-top: 50px; /* Marge supérieure pour l'espace */
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Masquer les nouveaux éléments par défaut */
+.hidden {
+    display: none;
+}

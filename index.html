@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="assets/js/app.js" defer></script>
+    <title>Musique</title>
+    
+</head>
+<body>
+    
+  
+    <div id="coverAndTitleContainer">
+        <!-- Couverture de la musique en cours de lecture -->
+        <div id="lectureCover" class="hidden">
+            <img id="currentCover" src="" alt="Cover" width="300" height="300">
+        </div>
+
+        <!-- Titre de la musique en cours de lecture -->
+        <h2 id="currentTitle" class="hidden"></h2>
+    </div>
+
+    <!-- Lecteur audio -->
+    <audio id="lecteur" controls src=""></audio>
+
+    <!-- Liste des couvertures de musique -->
+    <nav>
+        <ul id="playlist">
+            <!-- Contenu de la playlist généré dynamiquement -->
+        </ul>
+    </nav>
+    <!-- Bouton pour choisir une musique aléatoire -->
+    <button id="randomButton">Choisir une musique aléatoire</button>
+    
+
+    <script src="assets/app.js" defer></script>
+</body>
+</html>

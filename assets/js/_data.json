@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "cover" : "bonheur.jpg",
+        "sound" : "bonheur.mp3",
+        "title" : "Bonheur"
+    },
+    {
+        "id" : 2,
+        "cover" : "burger.jpg",
+        "sound" : "burger.mp3",
+        "title" : "Burger "
+
+    },
+    {
+        "id": 3,
+        "cover" : "LaRoja.jpg",
+        "sound" : "LaRoja.mp3",
+        "title" : "La Roja"
+    },
+    {
+        "id": 4,
+        "cover" : "pedro.gif",
+        "sound" : "pedro.mp3",
+        "title" : "pedrooooooooo "
+    },
+    {
+        "id": 5,
+        "cover" : "ofond.jpeg",
+        "sound" : "ofond.mp3",
+        "title" : "On va la foutre au fond "
+    }
+]
